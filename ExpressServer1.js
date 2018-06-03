@@ -7,6 +7,8 @@ const fetch = require ('node-fetch');
 
 var app = express();
 
+//hide framework name
+app.set('x-powered-by', false);
 // make routing case sensitive
 app.enable('case sensitive routing');
 
